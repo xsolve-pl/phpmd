@@ -191,4 +191,40 @@ class Foo {
         </example>
     </rule>
 
+    <rule name="VarDumpInvocation"
+          message = "The {0} {1}() contains a var_dump invocation."
+          class="PHP_PMD_Rule_Design_VarDumpInvocation">
+        <description>
+            <![CDATA[
+A var_dump function should not be used in stable releases.
+            ]]>
+        </description>
+        <priority>1</priority>
+        <example />
+    </rule>
+
+    <rule name="PrintRInvocation"
+          message = "The {0} {1}() contains a print_r invocation."
+          class="PHP_PMD_Rule_Design_PrintRInvocation">
+        <description>
+            <![CDATA[
+A print_r function should not be used in stable releases.
+            ]]>
+        </description>
+        <priority>1</priority>
+        <example />
+    </rule>
+
+    <rule name="DebugBacktraceInvocation"
+          message = "The {0} {1}() contains a debug_backtrace invocation."
+          class="PHP_PMD_Rule_Design_DebugBacktraceInvocation">
+        <description>
+            <![CDATA[
+A debug_backtrace function should not be used in stable releases.
+            ]]>
+        </description>
+        <priority>1</priority>
+        <example />
+    </rule>
+
 </ruleset>
